@@ -2,7 +2,6 @@
 body{
     font-family: "Inter", sans-serif;
     margin: 0;
-    padding: 0;
     background-color: #9471A5;
     height: 100vh;
     width: 100%;
@@ -17,13 +16,20 @@ body{
     color: #121CFF;
     font-size: 16px;
     text-align: center;
-    margin-top: 20px;
+    margin: 0;
+    padding-top: 20px;
 }
 #icon {
     margin: 14px auto 0;
+    height: 500px;
+    width: 500px;
+    display: block;
 }
 #upgrades {
     display: grid; 
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto;
+}
+#meow {
+    display: flex;
 }
