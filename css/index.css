@@ -32,17 +32,25 @@ body {
 
 #upgrades {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 100px 100px 100px;
     width: 67%;
     padding: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
 }
 
 #meow {
     display: flex;
     height: 100%;
 }
-.upgrade {
+.upgrade { 
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
     display: flex;
     gap: 5px;
+    background-color: #56C9C2;
 }
