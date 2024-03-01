@@ -21,6 +21,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .welcome__title {
@@ -37,10 +38,12 @@ body {
 
 #exit {
     color: black;
+    cursor: pointer;
 }
 
 #start {
     color: green;
+    cursor: pointer;
 }
 
 .welcome__icon {
