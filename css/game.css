@@ -41,6 +41,9 @@ body {
     justify-content: center;
     gap: 25px;
 }
+#upgrades:hover{
+    background: #3d378f;
+}
 
 #meow {
     display: flex;
