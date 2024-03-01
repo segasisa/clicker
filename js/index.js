@@ -32,6 +32,7 @@ function handleUpgrade(event) {
     if (balance < price) return;
 
     balance -= price;
+    balanceField.innerHTML = balance;
 
     button.removeEventListener("click", handleUpgrade);
     button.classList.add("buyed");
@@ -62,4 +63,5 @@ function handleUpgrade(event) {
 
 setInterval(() => {
     balance += diamondPerSecond;
+    balanceField.innerHTML = balance;
 }, 1000)
