@@ -2,6 +2,11 @@
 
 body {
     font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+
+    font-size: 42px;
+
     margin: 0;
     background-color: #9471A5;
     height: 100vh;
@@ -9,86 +14,29 @@ body {
     box-sizing: border-box;
 }
 
-#Clicker {
+.container {
     height: 100%;
-    width: 33%;
-    border-right: #121CFF solid 6px;
-}
-
-.Name {
-    color: #121CFF;
-    font-size: 32px;
-    text-align: center;
-    margin: 0;
-    padding-top: 20px;
-}
-
-#icon {
-    margin: 14px auto;
-    height: 200px;
-    width: 200px;
-    display: block;
-    cursor: pointer;
-}
-
-#upgrades {
-    display: grid;
-    grid-template-columns: 500px 500px;
-    grid-template-rows: 100px 100px 100px;
-    width: 67%;
-    padding: 10px;
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 25px;
 }
 
-#meow {
+.welcome__title {
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.welcome__buttons {
     display: flex;
-    height: 100%;
-}
-
-.upgrade {
-    border-radius: 20px;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    display: flex;
-    gap: 5px;
-    background-color: #56C9C2;
 }
 
-.iconup {
-    width: 13px;
-    font-size: 17px;
+#exit {
+    color: black;
 }
 
-.buyed {
-    cursor: not-allowed;
-    background-color: gray;
-}
-
-@media (max-width: 1600px) {
-    #meow {
-        flex-direction: column;
-    }
-
-    #Clicker {
-        border-right: none;
-        border-bottom: #121CFF solid 6px;
-        width: 100%;
-        height: auto;
-    }
-
-    #upgrades {
-        padding: 0;
-        width: 100%;
-    }
-}
-
-@media (max-width: 1050px) {
-    #upgrades{
-        grid-template-columns: 90%;
-        grid-template-rows: repeat(6, 50px);
-        margin-top: 30px;
-    }
+#start {
+    color: green;
 }
