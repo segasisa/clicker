@@ -41,9 +41,8 @@ body {
     justify-content: center;
     gap: 25px;
 }
-.upgrade:hover{
+.upgrade:hover:not(.buyed){
     background: #3d378f;
-    
 }
 
 #meow {
