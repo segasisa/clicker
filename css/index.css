@@ -24,7 +24,7 @@ body {
 }
 
 #icon {
-    margin: 14px auto 0;
+    margin: 14px auto;
     height: 200px;
     width: 200px;
     display: block;
@@ -45,7 +45,8 @@ body {
     display: flex;
     height: 100%;
 }
-.upgrade { 
+
+.upgrade {
     border-radius: 20px;
     align-items: center;
     justify-content: center;
@@ -54,7 +55,35 @@ body {
     gap: 5px;
     background-color: #56C9C2;
 }
-.iconup{
+
+.iconup {
     width: 13px;
     font-size: 17px;
+}
+
+@media (max-width: 1600px) {
+    #meow {
+        flex-direction: column;
+    }
+
+    #Clicker {
+        border-right: none;
+        border-bottom: #121CFF solid 6px;
+        width: 100%;
+    }
+
+    #upgrades {
+        padding:0 ;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1050px) {
+    #upgrades{
+        grid-template-columns: 90%;
+        grid-template-rows: repeat(6, 50px);
+        
+    }
+    
+    
 }
