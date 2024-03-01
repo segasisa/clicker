@@ -1,4 +1,3 @@
-
 const clicker = document.querySelector("#icon");
 const upgradeButtons = document.querySelectorAll(".upgrade");
 
@@ -21,9 +20,38 @@ clicker.addEventListener("click", () => {
 })
 
 upgradeButtons.forEach((button) => {
-    button.addEventListener("click", handleUpgrade, { once: true });
+    button.addEventListener("click", handleUpgrade);
 })
 
-function handleUpgrade(e) {
-    console.log(e);
+function handleUpgrade(event) {
+    const button = event.target.closest("div");
+    const price = Number(button.querySelector(".price"));
+
+    if (price < balance) return;
+
+    balance -= price;
+
+    button.removeEventListener("click", handleUpgrade);
+    button.classList.add("buyed");
+
+    switch (button.id) {
+        case "upgrade1":
+            diamondsPerClick *= 2;
+            break;
+        case "upgrade2":
+            diamondPerSecond += 5;
+            break;
+        case "upgrade3":
+            diamondsPerClick *= 10;
+            break;
+        case "upgrade4":
+            diamondPerSecond += 25;
+            break;
+        case "upgrade5":
+            diamondPerSecond += 50;
+            break;
+        case "upgrade6":
+            diamondPerSecond += 150;
+            break;
+    }
 }
