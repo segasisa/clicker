@@ -41,8 +41,9 @@ body {
     justify-content: center;
     gap: 25px;
 }
-#upgrades:hover{
+.upgrade:hover{
     background: #3d378f;
+    
 }
 
 #meow {
@@ -58,6 +59,7 @@ body {
     display: flex;
     gap: 5px;
     background-color: #56C9C2;
+    transition: background 0.2s ;
 }
 
 .iconup {
