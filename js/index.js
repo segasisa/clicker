@@ -19,15 +19,17 @@ clicker.addEventListener("click", () => {
     balanceField.innerHTML = balance;
 })
 
+// Улучшения
+
 upgradeButtons.forEach((button) => {
     button.addEventListener("click", handleUpgrade);
 })
 
 function handleUpgrade(event) {
     const button = event.target.closest("div");
-    const price = Number(button.querySelector(".price"));
+    const price = Number(button.querySelector(".price").innerHTML);
 
-    if (price < balance) return;
+    if (balance < price) return;
 
     balance -= price;
 
@@ -55,3 +57,9 @@ function handleUpgrade(event) {
             break;
     }
 }
+
+// Добыча в секунду
+
+setInterval(() => {
+    balance += diamondPerSecond;
+}, 1000)
