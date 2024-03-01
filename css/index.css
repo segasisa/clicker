@@ -5,7 +5,7 @@ body {
     font-weight: 900;
     font-style: italic;
 
-    font-size: 42px;
+    font-size: 26px;
 
     margin: 0;
     background-color: #9471A5;
@@ -16,7 +16,8 @@ body {
 
 .container {
     height: 100%;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,6 +32,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 #exit {
@@ -39,4 +41,8 @@ body {
 
 #start {
     color: green;
+}
+
+.welcome__icon {
+    width: 150px;
 }
