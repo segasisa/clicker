@@ -76,10 +76,12 @@ body {
         border-right: none;
         border-bottom: #121CFF solid 6px;
         width: 100%;
+        height: auto;
     }
 
     #upgrades {
-        padding:0 ;
+        padding: 0;
+        margin-top: 30px;
         width: 100%;
     }
 }
